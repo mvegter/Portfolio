@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio generator using GitHub and LinkedIn data",
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvegter/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "Martijn Vegter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvegter/Portfolio/issues"
+  },
+  "homepage": "https://github.com/mvegter/Portfolio#readme"
+}
