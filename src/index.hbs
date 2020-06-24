@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        {{#with LinkedIn}}
+            <meta name="description" content="{{profile.headline}}" />
+        {{/with}}
+        {{#with profile}}
+            <meta name="author" content="{{firstName}} {{lastName}}" />
+            <title>{{firstName}} {{lastName}} - Resume</title>
+        {{/with}}
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="assets/fonts/googleapis-Saira.css" rel="stylesheet" type="text/css" />
+        <link href="assets/fonts/googleapis-Muli.css" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                {{#with profile}}
+                    <span class="d-block d-lg-none">{{firstName}} {{lastName}}</span>
+                {{/with}}
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contributions">Contributions</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        {{#with profile}}
+                        {{firstName}}
+                        <span class="text-primary">{{lastName}}</span>
+                        {{/with}}
+                    </h1>
+                    <div class="subheading mb-5">{{breaklines LinkedIn.profile.headline}}</div>
+                    <p class="lead mb-5">{{breaklines LinkedIn.profile.summary}}</p>
+                    <div class="social-icons">
+                        {{#each socialMedia}}
+                        <a class="social-icon" href="{{link}}" target="_blank" rel="noreferrer noopener"><i class="fab fa-{{icon}}"></i></a>
+                        {{/each}}
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            {{#with LinkedIn}}
+                <section class="resume-section" id="experience">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Experience</h2>
+                        {{#each positions }}
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">{{title}}</h3>
+                                    <div class="subheading mb-3">{{companyName}}</div>
+                                    <p>{{breaklines description}}</p>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">{{date1}}</span></div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </section>
+                <hr class="m-0" />
+                <!-- Education-->
+                <section class="resume-section" id="education">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Education</h2>
+                        {{#each educations }}
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">{{title}}</h3>
+                                    <div class="subheading mb-3">{{degree}}</div>
+                                    <div>{{fieldOfStudy}}</div>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">{{date1}} - {{date2}}</span></div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </section>
+                <hr class="m-0" />
+            {{/with}}
+            {{#with GitHub}}
+                <!-- Projects-->
+                <section class="resume-section" id="projects">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Projects</h2>
+                        <div class="container-fluid content-row">
+                            <div class="row">
+                                {{#each repos}}
+                                    <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <a href="{{html_url}}" target="_blank" rel="noreferrer noopener">
+                                                        {{full_name}}
+                                                    </a>
+                                                </h5>
+                                                <p class="card-text">
+                                                    <div class="repository-icon">
+                                                        <svg aria-label="Code" role="img" viewBox="0 0 640 512" width="20" height="20">
+                                                            <path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
+                                                        </svg>
+                                                        {{language}}
+                                                    </div>
+                                                    <div class="repository-icon">
+                                                        <svg aria-label="Star" role="img" viewBox="0 0 14 16" width="20" height="20">
+                                                            <path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+                                                        </svg>
+                                                        {{stargazers_count}}
+                                                    </div>
+                                                    <div class="repository-icon">
+                                                        <svg aria-label="Forks" role="img" viewBox="0 0 10 16" width="20" height="20">
+                                                            <path d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path>
+                                                        </svg>
+                                                        {{forks_count}}
+                                                    </div>
+                                                </p>
+                                                <p class="card-text">{{breaklines description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr class="m-0" />
+                <!-- Contributions-->
+                <section class="resume-section" id="contributions">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Contributions</h2>
+                        <div class="container-fluid content-row">
+                            <div class="row">
+                                {{#each contribs}}
+                                    <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <a href="{{html_url}}" target="_blank" rel="noreferrer noopener">
+                                                        {{full_name}}
+                                                    </a>
+                                                </h5>
+                                                <p class="card-text">
+                                                    <div class="repository-icon">
+                                                        <svg aria-label="Code" role="img" viewBox="0 0 640 512" width="20" height="20">
+                                                            <path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
+                                                        </svg>
+                                                        {{language}}
+                                                    </div>
+                                                    <div class="repository-icon">
+                                                        <svg aria-label="Star" role="img" viewBox="0 0 14 16" width="20" height="20">
+                                                            <path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+                                                        </svg>
+                                                        {{stargazers_count}}
+                                                    </div>
+                                                    <div class="repository-icon">
+                                                        <svg aria-label="Forks" role="img" viewBox="0 0 10 16" width="20" height="20">
+                                                            <path d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path>
+                                                        </svg>
+                                                        {{forks_count}}
+                                                    </div>
+                                                </p>
+                                                <p class="card-text">{{breaklines description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {{/with}}
+        </div>
+        <!-- Font Awesome icons (free version)-->
+        <script src="assets/js/fontawesome-v5.13.0-all.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="assets/js/jquery-v3.5.1.min.js"></script>
+        <script src="assets/js/bootstrap-v4.5.0.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="assets/js/jquery-v1.4.1.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

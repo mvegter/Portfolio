@@ -17,5 +17,22 @@
   "bugs": {
     "url": "https://github.com/mvegter/Portfolio/issues"
   },
-  "homepage": "https://github.com/mvegter/Portfolio#readme"
+  "homepage": "https://github.com/mvegter/Portfolio#readme",
+  "dependencies": {
+    "@octokit/graphql": "4.5.1",
+    "handlebars": "4.7.6",
+    "scrapedin": "1.0.20"
+  },
+  "devDependencies": {
+    "standard": "14.3.4"
+  },
+  "standard": {
+    "ignore": [
+      "dist/**",
+      "src/**"
+    ]
+  },
+  "directories": {
+    "lib": "lib"
+  }
 }
