@@ -10125,6 +10125,12 @@ section.resume-section .resume-section-content {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .social-icons .social-icon {
+    margin-right: 0.5rem;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
+  }
 }
 @media (min-width: 768px) {
   section.resume-section {
