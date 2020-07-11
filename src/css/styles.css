@@ -10009,7 +10009,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 15rem;
   }
 }
 h1,
@@ -10054,7 +10054,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 15rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -10159,6 +10159,12 @@ section.resume-section .resume-section-content {
   }
 }
 @media (min-width: 1140px) {
+  #sideNav {
+    width: 20rem;
+  }
+  body {
+    padding-left: 20rem;
+  }
   section.resume-section {
     padding-left: 5rem;
     padding-right: 5rem;
