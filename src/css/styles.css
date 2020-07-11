@@ -10096,6 +10096,7 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
@@ -10129,12 +10130,6 @@ section.resume-section .resume-section-content {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .social-icons .social-icon {
-    margin-right: 0.5rem;
-  }
-  .social-icons .social-icon:last-child {
-    margin-right: 0;
-  }
   h1, .h1 {
     font-size: 3.5rem;
   }
@@ -10149,6 +10144,15 @@ section.resume-section .resume-section-content {
   }
   section.resume-section:first-child {
     min-height: calc(100vh - 56px);
+  }
+}
+@media (max-width: 768px) {
+  .social-icons .social-icon {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
   }
 }
 @media (min-width: 768px) {
