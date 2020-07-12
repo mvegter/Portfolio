@@ -1,0 +1,236 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "ignorePatterns": [
+    "node_modules/",
+    "database/data/",
+    "lib/public/assets/"
+  ],
+  "rules": {
+    "array-bracket-newline": [
+      "error",
+      {
+        "multiline": true
+      }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never",
+      {
+        "singleValue": false
+      }
+    ],
+    "array-element-newline": [
+      "error",
+      "consistent"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    "capitalized-comments": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "computed-property-spacing": "error",
+    "curly": "error",
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "function-call-argument-newline": [
+      "error",
+      "never"
+    ],
+    "function-paren-newline": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "init-declarations": "off",
+    "key-spacing": "error",
+    "keyword-spacing": "error",
+    "linebreak-style": "off",
+    "lines-around-comment": [
+      "error",
+      {
+        "allowBlockStart": true,
+        "allowClassStart": true,
+        "beforeBlockComment": true
+      }
+    ],
+    "lines-between-class-members": [
+      "error",
+      "always"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "multiline-comment-style": [
+      "error",
+      "starred-block"
+    ],
+    "no-console": "error",
+    "no-extra-parens": "error",
+    "no-implicit-coercion": "error",
+    "no-magic-numbers": "off",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 0,
+        "maxEOF": 0
+      }
+    ],
+    "no-return-assign": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^(_|((request|response|next)$))"
+      }
+    ],
+    "no-var": "error",
+    "no-trailing-spaces": "error",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "padded-blocks": [
+      "error",
+      "never"
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "cjs-import",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "cjs-import",
+        "next": "cjs-import"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "cjs-export"
+      }
+    ],
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowUnboundThis": true
+      }
+    ],
+    "prefer-const": "error",
+    "prefer-destructuring": "error",
+    "prefer-object-spread": "error",
+    "prefer-template": "error",
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "radix": "error",
+    "semi": "error",
+    "semi-style": [
+      "error",
+      "last"
+    ],
+    "space-before-blocks": [
+      "error",
+      {
+        "functions": "always",
+        "keywords": "always",
+        "classes": "always"
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "space-infix-ops": "error",
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+    "sort-keys": "off",
+    "sort-imports": "off",
+    "sort-vars": "off",
+    "template-curly-spacing": [
+      "error",
+      "never"
+    ]
+  }
+}

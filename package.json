@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "private": true,
   "scripts": {
+    "lint": "eslint lib/",
+    "lint:fix": "eslint lib/ --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,13 +27,7 @@
     "scrapedin": "1.0.20"
   },
   "devDependencies": {
-    "standard": "14.3.4"
-  },
-  "standard": {
-    "ignore": [
-      "dist/**",
-      "src/**"
-    ]
+    "eslint": "7.4.0"
   },
   "directories": {
     "lib": "lib"
