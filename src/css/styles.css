@@ -10121,10 +10121,6 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
-.resume-section:last-child {
-  padding-bottom: 0;
-}
-
 @media (max-width: 576px) {
   h1, .h1 {
     font-size: 3.5rem;
