@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/mvegter/Portfolio#readme",
   "dependencies": {
-    "@octokit/graphql": "4.5.1",
+    "@octokit/graphql": "4.5.2",
     "handlebars": "4.7.6",
     "minify": "5.1.1",
     "scrapedin": "1.0.21"
