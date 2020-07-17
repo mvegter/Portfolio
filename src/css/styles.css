@@ -10120,6 +10120,11 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
+#footer {
+  min-height: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 @media (max-width: 576px) {
   h1, .h1 {
@@ -10145,6 +10150,9 @@ section.resume-section .resume-section-content {
   }
   .social-icons .social-icon:last-child {
     margin-right: 0;
+  }
+  #footer {
+    padding: 1rem;
   }
 }
 @media (min-width: 768px) {
