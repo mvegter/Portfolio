@@ -91,8 +91,11 @@
                             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                 <div class="flex-grow-1">
                                     <h3 class="mb-0">{{title}}</h3>
+                                    {{#ifEquals degree fieldOfStudy}}
                                     <div class="subheading mb-3">{{degree}}</div>
-                                    <div>{{fieldOfStudy}}</div>
+                                    {{else}}
+                                    <div class="subheading mb-3">{{degree}} - {{fieldOfStudy}}</div>
+                                    {{/ifEquals}}
                                     <p>{{breaklines description}}</p>
                                 </div>
                                 <div class="flex-shrink-0"><span class="text-primary subheading">{{date1}} - {{date2}}</span></div>
