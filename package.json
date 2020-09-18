@@ -23,7 +23,7 @@
   "dependencies": {
     "@octokit/graphql": "4.5.6",
     "handlebars": "4.7.6",
-    "minify": "5.1.1",
+    "minify": "5.2.0",
     "morgan": "1.10.0",
     "scrapedin": "1.0.21"
   },
