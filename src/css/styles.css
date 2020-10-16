@@ -10161,6 +10161,9 @@ section.resume-section .resume-section-content {
     padding-right: 2.5rem;
     min-height: 100vh;
   }
+  .column-right {
+    margin-left: 1rem;
+  }
 }
 @media (min-width: 1140px) {
   #sideNav {
@@ -10172,6 +10175,9 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+  .column-right {
+    margin-left: 2rem;
   }
 }
 
