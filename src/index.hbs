@@ -40,6 +40,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#repositories">Repositories</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contributions">Contributions</a></li>
                 </ul>
             </div>
@@ -104,12 +105,28 @@
                     </div>
                 </section>
                 <hr class="m-0" />
-            {{/with}}
-            {{#with GitHub}}
-                <!-- Projects-->
+                <!-- Projects -->
                 <section class="resume-section" id="projects">
                     <div class="resume-section-content">
                         <h2 class="mb-5">Projects</h2>
+                        {{#each projects }}
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">{{name}}</h3>
+                                    <p>{{breaklines description}}</p>
+                                </div>
+                                <div class="flex-shrink-0 column-right"><span class="text-primary subheading">{{date}}</span></div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </section>
+                <hr class="m-0" />
+            {{/with}}
+            {{#with GitHub}}
+                <!-- Repositories -->
+                <section class="resume-section" id="repositories">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Repositories</h2>
                         <div class="container-fluid content-row">
                             <div class="row">
                                 {{#each repos}}
