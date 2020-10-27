@@ -28,7 +28,7 @@
     "scrapedin": "1.0.21"
   },
   "devDependencies": {
-    "eslint": "7.12.0"
+    "eslint": "7.12.1"
   },
   "directories": {
     "lib": "lib"
