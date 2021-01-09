@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/mvegter/Portfolio#readme",
   "dependencies": {
+    "@mvegter/scrapedin": "1.0.22",
     "@octokit/graphql": "4.5.8",
     "handlebars": "4.7.6",
     "minify": "6.0.1",
-    "morgan": "1.10.0",
-    "scrapedin": "1.0.21"
+    "morgan": "1.10.0"
   },
   "devDependencies": {
     "dotenv": "8.2.0",
