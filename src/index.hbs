@@ -91,12 +91,12 @@
                         {{#each educations }}
                             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                 <div class="flex-grow-1">
-                                    <h3 class="mb-0">{{title}}</h3>
                                     {{#ifEquals degree fieldOfStudy}}
-                                    <div class="subheading mb-3">{{degree}}</div>
+                                    <h3 class="mb-0">{{degree}}</h3>
                                     {{else}}
-                                    <div class="subheading mb-3">{{degree}} - {{fieldOfStudy}}</div>
+                                    <h3 class="mb-0">{{degree}} - {{fieldOfStudy}}</h3>
                                     {{/ifEquals}}
+                                    <div class="subheading mb-3">{{title}}</div>
                                     <p>{{breaklines description}}</p>
                                 </div>
                                 <div class="flex-shrink-0 column-right"><span class="text-primary subheading">{{date1}} - {{date2}}</span></div>
