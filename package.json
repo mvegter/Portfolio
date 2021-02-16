@@ -23,7 +23,7 @@
   "dependencies": {
     "@mvegter/scrapedin": "1.0.22",
     "@octokit/graphql": "4.6.0",
-    "handlebars": "4.7.6",
+    "handlebars": "4.7.7",
     "minify": "7.0.0",
     "morgan": "1.10.0"
   },
