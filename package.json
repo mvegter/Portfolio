@@ -28,7 +28,7 @@
     "morgan": "1.10.0"
   },
   "devDependencies": {
-    "dotenv": "9.0.0",
+    "dotenv": "9.0.1",
     "eslint": "7.25.0"
   },
   "directories": {
