@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/mvegter/Portfolio#readme",
   "dependencies": {
-    "@mvegter/scrapedin": "1.0.24",
+    "@mvegter/scrapedin": "1.0.25",
     "@octokit/graphql": "4.6.1",
     "handlebars": "4.7.7",
     "minify": "7.0.2",
