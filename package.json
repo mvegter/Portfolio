@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "dotenv": "10.0.0",
-    "eslint": "7.26.0"
+    "eslint": "7.27.0"
   },
   "directories": {
     "lib": "lib"
