@@ -75,7 +75,9 @@
                             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                 <div class="flex-grow-1">
                                     <h3 class="mb-0">{{title}}</h3>
-                                    <div class="subheading mb-3">{{companyName}}</div>
+                                    <div class="subheading mb-3">
+                                        <a href="{{url}}" target="_blank" rel="noreferrer noopener">{{companyName}}</a>
+                                    </div>
                                     <p>{{breaklines description}}</p>
                                 </div>
                                 <div class="flex-shrink-0 column-right"><span class="text-primary subheading">{{date1}}</span></div>
@@ -96,7 +98,9 @@
                                     {{else}}
                                     <h3 class="mb-0">{{degree}} - {{fieldOfStudy}}</h3>
                                     {{/ifEquals}}
-                                    <div class="subheading mb-3">{{title}}</div>
+                                    <div class="subheading mb-3">
+                                        <a href="{{url}}" target="_blank" rel="noreferrer noopener">{{title}}</a>
+                                    </div>
                                     <p>{{breaklines description}}</p>
                                 </div>
                                 <div class="flex-shrink-0 column-right"><span class="text-primary subheading">{{date1}} - {{date2}}</span></div>
