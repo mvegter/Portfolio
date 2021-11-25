@@ -10169,6 +10169,10 @@ section.resume-section .resume-section-content {
   #sideNav {
     width: 20rem;
   }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
   body {
     padding-left: 20rem;
   }
@@ -10184,6 +10188,13 @@ section.resume-section .resume-section-content {
 @media (min-width: 1440px) {
   section.resume-section {
     max-width: 1440px; 
+    margin: 0 auto; 
+  }
+}
+
+@media (min-width: 1800px) {
+  section.resume-section {
+    max-width: 1800px; 
     margin: 0 auto; 
   }
 }
