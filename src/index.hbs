@@ -38,10 +38,10 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#repositories">Repositories</a></li>
+                    {{!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li> --}}
+                    {{!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li> --}}
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contributions">Contributions</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#repositories">Repositories</a></li>
                 </ul>
             </div>
         </nav>
@@ -80,13 +80,13 @@
                                     </div>
                                     <p>{{breaklines description}}</p>
                                 </div>
-                                <div class="flex-shrink-0 column-right"><span class="text-primary subheading">{{date1}}</span></div>
+                                <div class="flex-shrink-0 column-right"><span class="text-primary subheading">{{date}}</span></div>
                             </div>
                         {{/each}}
                     </div>
                 </section>
                 <hr class="m-0" />
-                <!-- Education-->
+                {{!-- <!-- Education-->
                 <section class="resume-section" id="education">
                     <div class="resume-section-content">
                         <h2 class="mb-5">Education</h2>
@@ -108,8 +108,8 @@
                         {{/each}}
                     </div>
                 </section>
-                <hr class="m-0" />
-                <!-- Projects -->
+                <hr class="m-0" /> --}}
+                {{!-- <!-- Projects -->
                 <section class="resume-section" id="projects">
                     <div class="resume-section-content">
                         <h2 class="mb-5">Projects</h2>
@@ -124,16 +124,16 @@
                         {{/each}}
                     </div>
                 </section>
-                <hr class="m-0" />
+                <hr class="m-0" /> --}}
             {{/with}}
             {{#with GitHub}}
-                <!-- Repositories -->
-                <section class="resume-section" id="repositories">
+                <!-- Contributions-->
+                <section class="resume-section" id="contributions">
                     <div class="resume-section-content">
-                        <h2 class="mb-5">Repositories</h2>
+                        <h2 class="mb-5">Contributions</h2>
                         <div class="container-fluid content-row">
                             <div class="row">
-                                {{#each repos}}
+                                {{#each contribs}}
                                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-3">
                                         <div class="card h-100">
                                             <div class="card-body">
@@ -172,13 +172,13 @@
                     </div>
                 </section>
                 <hr class="m-0" />
-                <!-- Contributions-->
-                <section class="resume-section" id="contributions">
+                <!-- Repositories -->
+                <section class="resume-section" id="repositories">
                     <div class="resume-section-content">
-                        <h2 class="mb-5">Contributions</h2>
+                        <h2 class="mb-5">Repositories</h2>
                         <div class="container-fluid content-row">
                             <div class="row">
-                                {{#each contribs}}
+                                {{#each repos}}
                                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-3">
                                         <div class="card h-100">
                                             <div class="card-body">
