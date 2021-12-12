@@ -10150,6 +10150,9 @@ section.resume-section .resume-section-content {
   h3, .h3 {
     font-size: 1.3rem;
   }
+  h5, .h5 {
+    font-size: 1.2rem;
+  }
   .subheading {
     font-size: 1.2rem;
   }
@@ -10169,6 +10172,12 @@ section.resume-section .resume-section-content {
   }
   #footer {
     padding: 1rem;
+  }
+  .experience-position-company, .experience-position-description {
+    margin-bottom: 0px !important;
+  }
+  .mb-5 {
+    margin-bottom: 2rem !important;
   }
 }
 @media (min-width: 768px) {
