@@ -10126,18 +10126,32 @@ section.resume-section .resume-section-content {
   padding-bottom: 1rem;
 }
 
+@media (max-width: 1140px) {
+    h1, .h1 {
+      font-size: 3rem;
+    }
+    h2, .h2 {
+      font-size: 2rem;
+    }
+    h3, .h3, .subheading {
+      font-size: 1.5rem;
+    }
+    section.resume-section:first-child {
+      min-height: calc(100vh - 56px);
+    }
+  }
 @media (max-width: 576px) {
   h1, .h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   h3, .h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .subheading {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   section.resume-section:first-child {
     min-height: calc(100vh - 56px);
@@ -10147,6 +10161,8 @@ section.resume-section .resume-section-content {
   .social-icons .social-icon {
     margin-right: 1rem;
     margin-bottom: 1rem;
+    height: 3rem;
+    width: 3rem;
   }
   .social-icons .social-icon:last-child {
     margin-right: 0;
