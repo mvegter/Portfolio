@@ -10136,10 +10136,12 @@ section.resume-section .resume-section-content {
     h3, .h3, .subheading {
       font-size: 1.5rem;
     }
-    section.resume-section:first-child {
-      min-height: calc(100vh - 56px);
-    }
   }
+@media (max-width: 922px) {
+  section.resume-section:first-child {
+    min-height: calc(100vh - 56px);
+  }
+}
 @media (max-width: 576px) {
   h1, .h1 {
     font-size: 3rem;
